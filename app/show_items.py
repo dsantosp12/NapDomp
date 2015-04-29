@@ -17,13 +17,14 @@ def show_items():
             print('You have 0 items in the database.')
         else:
             print('---------------------------------------------------------------------------------------------------'
-                  '---------------------------')
-            print("Name\t\tBrand\t\tModel\t\t\t\t\t\tDescription\t\t\t\t\t\t\t\t\tUnit Cost\t\tSelling Price")
+                  '--------------------------------------')
+            print("{:<11}{:<16}{:<25}{:<40}{:<15}{:<15}{:<10}".format("Name", "Brand", "Model", "Description",
+                                                                      "Quantity", "Unit Cost", "Selling Price"))
             print('---------------------------------------------------------------------------------------------------'
-                  '---------------------------')
+                  '--------------------------------------')
             for item in items:
-                print("{:<12}{:<14}{:<5}{:<67}{:<16}{}".format(str(item[1]), str(item[2]), str(item[3]),
-                                                                    str(item[4]), str(item[5]), str(item[6])))
+                print("{:<11}{:<18}{:<8}{:<58}{:<14}{:<17}{}".format(str(item[1]), str(item[3]), str(item[4]),
+                                                               str(item[5]), str(item[2]), str(item[6]), str(item[7])))
             print("\n")
 
             while True:

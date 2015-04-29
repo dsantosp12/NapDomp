@@ -1,0 +1,3 @@
+CONFIG. DATABASE
+
+    In order to configure the database, run database_setup.py with Python 3 or grater.

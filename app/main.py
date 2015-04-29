@@ -1,4 +1,5 @@
 from app.create_item import create_item
+from app.update_item import update_item
 from app.show_items import show_items
 
 def show_menu():
@@ -20,7 +21,8 @@ while True:
         continue
 
     elif option == 'U':
-        pass
+        update_item()
+        continue
 
     elif option == 'I':
         pass

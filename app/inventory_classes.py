@@ -15,5 +15,14 @@ class CreateItem():
         self.picture = picture
 
 
-class UpdateItem(CreateItem):
-    pass
+class UpdateItem():
+
+    def __init__(self, name, brand, model, description, quantity, unit_cost, selling_price, picture):
+        self.name = name
+        self.brand = brand
+        self.model = model
+        self.description = description
+        self.quantity = quantity
+        self.unit_cost = unit_cost
+        self.selling_price = selling_price
+        self.picture = picture

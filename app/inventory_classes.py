@@ -4,7 +4,7 @@
 
 class CreateItem():
 
-    def __init__(self, name, brand, model, description, quantity, unit_cost, selling_price, picture):
+    def __init__(self, name, quantity, brand, model, description, unit_cost, selling_price, picture):
         self.name = name
         self.brand = brand
         self.model = model
@@ -17,7 +17,7 @@ class CreateItem():
 
 class UpdateItem():
 
-    def __init__(self, name, brand, model, description, quantity, unit_cost, selling_price, picture):
+    def __init__(self, name, quantity, brand, model, description, unit_cost, selling_price, picture):
         self.name = name
         self.brand = brand
         self.model = model

@@ -2,11 +2,12 @@ from app.create_item import create_item
 from app.update_item import update_item
 from app.show_items import show_items
 
+
 def show_menu():
     print("[C]REATE ITEM")
     print("[U]PDATE ITEM")
     print("[I]SSUE ITEM")
-    print("[S]how ITEMS")
+    print("[S]HOW ITEMS")
     print("[H]ELP")
     print("[Q]UIT")
     print("ENTER C, U, I, S, Q, OR H FOR HELP")

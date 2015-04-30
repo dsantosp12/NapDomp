@@ -1,6 +1,8 @@
 from app.create_item import create_item
 from app.update_item import update_item
 from app.show_items import show_items
+from db.db_connect import connect_db
+from webbrowser import open
 
 
 def show_menu():
@@ -14,6 +16,8 @@ def show_menu():
 
 
 while True:
+    connection = connect_db()
+
     show_menu()
     option = input("-> ").upper()
 
@@ -33,7 +37,10 @@ while True:
         continue
 
     elif option == 'H':
-        show_menu()
+        try:
+            open("http://www.napcorps.com/",)
+        except Exception as e:
+            print(e)
         continue
 
     elif option == 'Q':
@@ -43,3 +50,5 @@ while True:
     else:
         print("YOU MUST PROVIDE A VALID INPUT.\n")
         continue
+
+connection.close()

@@ -86,5 +86,3 @@ def create_item():
 
     # Success
     print('Item created successfully.\n')
-
-create_item()

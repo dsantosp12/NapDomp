@@ -1,6 +1,7 @@
 from app.create_item import create_item
 from app.update_item import update_item
 from app.show_items import show_items
+from webbrowser import open
 
 
 def show_menu():
@@ -33,7 +34,11 @@ while True:
         continue
 
     elif option == 'H':
-        show_menu()
+        try:
+            open("http://www.napcorps.com/")
+        except Exception as e:
+            print(e)
+
         continue
 
     elif option == 'Q':

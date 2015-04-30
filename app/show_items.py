@@ -43,3 +43,11 @@ def show_items():
     except Exception as e:
         print(e)
         exit(2)
+
+
+def show_item(items):
+    for item in items:
+        print("ID: {}".format(item[0]))
+        print("Name: {}".format(item[1]))
+        print("Brand: {}".format(item[3]))
+        print("Model: {}\n".format(item[4]))

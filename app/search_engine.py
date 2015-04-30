@@ -1,6 +1,5 @@
 from db.db_connect import connect_db
-# TODO: Create only one show item.
-from app.update_item import show_item
+from app.show_items import show_item
 
 
 def search_by_id():

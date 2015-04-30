@@ -3,6 +3,8 @@ from app.update_item import update_item
 from app.show_items import show_items
 from app.issue_item import issue_item
 from db.db_connect import connect_db
+from db.db_connect import mysql_check
+
 from webbrowser import open
 
 
@@ -15,6 +17,8 @@ def show_menu():
     print("[Q]UIT")
     print("ENTER C, U, I, S, Q, OR H FOR HELP")
 
+# Check MySQL Status
+mysql_check()
 
 while True:
     connection = connect_db()

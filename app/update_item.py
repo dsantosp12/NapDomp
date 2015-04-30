@@ -1,5 +1,5 @@
 from db.db_connect import connect_db
-from app.inventory_classes import UpdateItem
+from app.search_engine import search_by_name, search_by_id
 
 
 def get_item_id():
@@ -20,14 +20,6 @@ def get_item_id():
         else:
             print("Please enter a valid input.")
             continue
-
-
-def show_item(items):
-    for item in items:
-        print("ID: {}".format(item[0]))
-        print("Name: {}".format(item[1]))
-        print("Brand: {}".format(item[3]))
-        print("Model: {}\n".format(item[4]))
 
 
 def update_item():

@@ -3,6 +3,7 @@
 
 from db.db_connect import connect_db
 from mysql.connector import errors
+from db.db_connect import mysql_check
 
 
 def create_database(connection):
@@ -54,6 +55,7 @@ def create_table(connection):
         print(str(e))
 
 
-connect_db()
-create_database(connect_db())
-create_table(connect_db())
+mysql_check()   # Check if it's possible to connect to MySQL
+connect_db()    # Connect to  My SQL
+create_database(connect_db())   # Create database
+create_table(connect_db())  # Create needed for the program

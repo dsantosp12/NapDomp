@@ -1,6 +1,7 @@
 from app.create_item import create_item
 from app.update_item import update_item
 from app.show_items import show_items
+from app.issue_item import issue_item
 from db.db_connect import connect_db
 from webbrowser import open
 
@@ -30,6 +31,7 @@ while True:
         continue
 
     elif option == 'I':
+        issue_item()
         pass
 
     elif option == 'S':
@@ -38,7 +40,7 @@ while True:
 
     elif option == 'H':
         try:
-            open("http://www.napcorps.com/",)
+            open("http://www.napcorps.com/")
         except Exception as e:
             print(e)
         continue

@@ -2,10 +2,9 @@ from app.create_item import create_item
 from app.update_item import update_item
 from app.show_items import show_items
 from app.issue_item import issue_item
+from app.help import show_help
 from db.db_connect import connect_db
 from db.db_connect import mysql_check
-
-from webbrowser import open
 
 
 def show_menu():
@@ -43,10 +42,7 @@ while True:
         continue
 
     elif option == 'H':
-        try:
-            open("http://www.napcorps.com/")
-        except Exception as e:
-            print(e)
+        show_help()
         continue
 
     elif option == 'Q':

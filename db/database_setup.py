@@ -22,6 +22,7 @@ def create_database(connection):
 
     except errors.DatabaseError as e:
         print(str(e))
+        exit(1)
 
 
 def create_table(connection):
@@ -49,11 +50,10 @@ def create_table(connection):
         cur.execute(query)
         connection.close()
 
-        print("Table created successfully!")
-
     except errors.ProgrammingError as e:
         print(str(e))
 
+    print("Table created successfully!")
 
 mysql_check()   # Check if it's possible to connect to MySQL
 connect_db()    # Connect to  My SQL

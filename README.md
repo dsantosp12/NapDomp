@@ -1,2 +1,2 @@
 # NapDomp
-README WILL BE WRITTEN LETTER
+Python Based inventory manager. GUI will be design at some point.!
